@@ -31,7 +31,7 @@
   min-height: 60vh;
   padding: 70px 50px;
   scroll-margin-top: 140px;
-  background-color: #230134;
+  background-color: #01340b;
   box-sizing: border-box;
 }
 

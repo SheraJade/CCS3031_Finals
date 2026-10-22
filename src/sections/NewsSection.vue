@@ -76,7 +76,7 @@
   width: 100%;
   min-height: 100vh;
   padding: 70px 50px;
-  background-color: #230134;
+  background-color: #013401;
   box-sizing: border-box;
 }
 
@@ -128,7 +128,7 @@
 }
 
 .card p {
-  color: #420d48;
+  color: #15480d;
   line-height: 1.5;
 }
 
