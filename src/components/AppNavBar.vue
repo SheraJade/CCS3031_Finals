@@ -3,7 +3,7 @@
     <div class="top">
       <div class="logo">
         <img src="@/assets/image/ccslogo.png" alt="" />
-        <p>Information Technology Students Organization</p>
+        <p>College of Computer Studies</p>
       </div>
       <div class="menu">
         <div class="dropdown">
@@ -29,7 +29,7 @@
             <a @click="goToSection('/officers', 'advisers')">Advisers</a>
           </div>
         </div>
-        <RouterLink to="/events">Events</RouterLink>
+        <RouterLink to="/News">News</RouterLink>
         <div class="dropdown">
           <RouterLink to="/contact">Contact</RouterLink>
           <div class="submenu">
@@ -69,8 +69,8 @@ const goToSection = async (path, id) => {
   z-index: 10;
   display: flex;
   flex-direction: column;
-  background-color: #180124;
-  box-shadow: 0 8px 24px rgba(60, 59, 59, 0.7);
+  background-color: #092401;
+  box-shadow: 0 8px 24px rgba(59, 60, 59, 0.7);
 
   .top {
     height: 120px;
@@ -124,7 +124,7 @@ const goToSection = async (path, id) => {
       position: absolute;
       display: none;
       flex-direction: column;
-      background-color: #180124;
+      background-color: #012404;
       min-width: 170px;
       border-radius: 5px;
       padding: 10px;

@@ -5,19 +5,53 @@
         <p>ACADEMIC PROGRAM</p>
         <h1>Program Offered</h1>
       </div>
+
       <div class="cards">
         <div class="card">
-          <div class="image"><img src="@/assets/image/IoT.jpg" alt="" /></div>
-          <h2>IOT</h2>
-          <h3>Internet of Things</h3>
-          <p>Workshops and projects that bridge the gap between the physical and digital worlds.</p>
+          <div class="image">
+            <img src="@/assets/image/programs/css.png" alt="CSS" />
+          </div>
+          <h2>CS</h2>
+          <h3>Computer Science</h3>
+          <p>
+            Workshops and projects that bridge the gap between the physical and
+            digital worlds.
+          </p>
         </div>
 
         <div class="card">
-          <div class="image"><img src="@/assets/image/database.jpg" alt="" /></div>
-          <h2>DATABASE</h2>
-          <h3>Data and Database Systems</h3>
-          <p>Learn to design, query, and manage the data that powers modern applications.</p>
+          <div class="image">
+            <img src="@/assets/image/programs/itso.png" alt="ITSO" />
+          </div>
+          <h2>IT</h2>
+          <h3>Information Technology</h3>
+          <p>
+            Learn to design, query, and manage the data that powers modern
+            applications.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="@/assets/image/programs/midas.png" alt="MIDAS" />
+          </div>
+          <h2>DMIA</h2>
+          <h3>Digital Media and Interactive Arts</h3>
+          <p>
+            Learn to build applications and develop practical coding skills.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <img src="@/assets/image/programs/lis.png" alt="LIS" />
+          </div>
+          <h2>IS</h2>
+          <h3>Information Systems</h3>
+          <p>
+            Explore network infrastructure, connectivity, and communication
+            systems.
+          </p>
         </div>
       </div>
     </div>
@@ -30,7 +64,7 @@
   min-height: 100vh;
   padding: 70px 50px;
   scroll-margin-top: 140px;
-  background-color: #230134;
+  background-color: #013418;
   box-sizing: border-box;
 }
 
@@ -57,20 +91,26 @@
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
 
     .card {
       background-color: #fbfbfb;
       padding: 40px 30px;
       text-align: center;
-      border-color: #7675d4;
-      border-style: groove;
-      align-items: center;
+      border: 2px groove #7675d4;
       border-radius: 10px;
+      box-sizing: border-box;
+
+      .image {
+        width: 100%;
+      }
 
       img {
+        display: block;
         width: 100%;
+        height: 220px;
+        object-fit: cover;
         box-shadow: 0 6px 20px rgba(229, 152, 29, 0.434);
         border-radius: 10px;
       }
@@ -88,17 +128,25 @@
       }
 
       p {
-        color: #230134;
+        color: #013402;
         line-height: 1.5;
       }
     }
   }
 }
+
 @media (max-width: 900px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr) !important;
+  .container {
+    .cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .card {
+      padding: 30px 20px;
+    }
   }
 }
+
 @media (max-width: 768px) {
   .program {
     min-height: auto;
@@ -108,7 +156,7 @@
 
   .container {
     .cards {
-      display: flex !important;
+      display: flex;
       flex-direction: column;
       gap: 20px;
     }
@@ -120,6 +168,22 @@
     .title {
       h1 {
         font-size: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .program {
+    padding: 50px 12px;
+  }
+
+  .container {
+    .card {
+      padding: 25px 15px;
+
+      h2 {
+        font-size: 25px;
       }
     }
   }

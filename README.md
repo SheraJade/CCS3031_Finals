@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # ccs3031_final
+=======
+# ccs3031_finals
+>>>>>>> b6872fe (Update pages and add assets)
 
 This template should help get you started developing with Vue 3 in Vite.
 

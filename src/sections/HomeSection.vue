@@ -2,19 +2,18 @@
   <section class="home" id="home">
     <div class="container">
       <div class="left">
-        <p class="sub-top">the ITSO community that bridges hardware, software, and users</p>
+        <p class="sub-top">the CCS core practices that build bridges between gaps</p>
         <h1 class="title">
-          INITIALIZE<br />
-          CONNECT<br />
-          COMPILE<br />
-          BUILD<br />
-          DEPLOY
+          HOME<br />
+          OF<br />
+          THE<br />
+          WARRIORS<br />
         </h1>
-        <h2 class="sub">different FIELDS, ONE codebase</h2>
+        <h2 class="sub">different people, <strong>ONE</strong> goal</h2>
         <button class="btn" @click="$router.push('/about')">About Us</button>
       </div>
       <div class="right">
-        <div class="image"><img src="@/assets/image/ITSO-pic.png" alt="" /></div>
+        <div class="image"><img src="@/assets/image/ccs-logo.jpg" alt="" /></div>
       </div>
     </div>
   </section>
@@ -50,7 +49,7 @@
   font-size: 0.95rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: #3f235f;
+  color: #235f31;
 }
 
 .title {
@@ -60,7 +59,7 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 1.5rem;
-  color: #3f235f;
+  color: #2d5f23;
 }
 .sub {
   font-size: 1.25rem;
@@ -70,7 +69,7 @@
 }
 
 .btn {
-  background-color: #53035e;
+  background-color: #055e03;
   color: #fafaf5;
   font-weight: 700;
   border: none;
@@ -84,7 +83,7 @@
 }
 
 .btn:hover {
-  background-color: #7a0589;
+  background-color: #058909;
   transform: translateY(-3px);
 }
 .right {
