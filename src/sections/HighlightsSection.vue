@@ -3,24 +3,24 @@
     <div class="container">
       <div class="title">
         <p>BY THE NUMBERS</p>
-        <h1>ITSO at a Glance</h1>
+        <h1>CCS the Best</h1>
       </div>
       <div class="people">
         <div class="person">
-          <h2>300+</h2>
-          <p>Active Members</p>
+          <h2>1,200+</h2>
+          <p>Student Enrollment</p>
         </div>
         <div class="person">
-          <h2>10+</h2>
-          <p>Events per Year</p>
+          <h2>1995</h2>
+          <p>Began since</p>
         </div>
         <div class="person">
-          <h2>12</h2>
-          <p>Partner Organizations</p>
+          <h2>2003</h2>
+          <p>Formaly established</p>
         </div>
         <div class="person">
-          <h2>5+</h2>
-          <p>Years of Service</p>
+          <h2>4</h2>
+          <p>Academic Degree programs</p>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
   max-width: 100vw;
   min-height: 60vh;
   scroll-margin-top: 140px;
-  background-color: #180124f7;
+  background-color: #01240af7;
   padding: 70px 50px;
 }
 
@@ -71,12 +71,12 @@
       border-radius: 10px;
 
       h2 {
-        color: #7675d4;
+        color: #dfbb07;
         font-size: 40px;
       }
 
       p {
-        color: #230134;
+        color: #013408;
       }
     }
   }

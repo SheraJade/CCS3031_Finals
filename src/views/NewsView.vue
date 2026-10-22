@@ -1,6 +1,6 @@
 <script setup>
 import AppNavBar from '@/components/AppNavBar.vue'
-import EventsSection from '@/sections/EventsSection.vue'
+import EventsSection from '@/sections/NewsSection.vue'
 </script>
 
 <template>
