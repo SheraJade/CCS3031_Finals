@@ -1,6 +1,6 @@
 <script setup>
 import AppNavBar from '@/components/AppNavBar.vue'
-import OfficerSection from '@/sections/OfficerSection.vue'
+import FacultySection from '@/sections/FacultySection.vue'
 import CommitteeSection from '@/sections/CommitteeSection.vue'
 import AdviserSection from '@/sections/AdviserSection.vue'
 
@@ -14,7 +14,7 @@ const scrollToSection = (id) => {
 <template>
   <AppNavBar />
   <div class="main">
-    <OfficerSection />
+    <FacultySection />
     <CommitteeSection />
     <AdviserSection />
   </div>

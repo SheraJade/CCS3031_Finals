@@ -9,36 +9,36 @@
       <div class="cards">
         <div class="card">
           <p>November 12, 2026</p>
-          <h2>IT Week 2026 Opens</h2>
+          <h2>CCS won Streetdance</h2>
           <h3>Campus News</h3>
           <p>
-            The College of Computer Studies kicks off IT Week
-            with activities, competitions, and technology talks.
+            The College of Computer Studies won its 3 in
+            a row thropy in street dance...
           </p>
         </div>
 
         <div class="card">
           <p>November 14, 2026</p>
-          <h2>Students Compete in Code Wars</h2>
+          <h2>Students Compete in Hackathon</h2>
           <h3>Student Activities</h3>
           <p>
-            Student programmers put their coding and
-            problem-solving skills to the test in Code Wars.
+            Student programmers presented their coding and
+            problem-solving skills to the test in ...
           </p>
         </div>
 
         <div class="card">
-          <p>November 18, 2026</p>
-          <h2>IoT Workshop Highlights</h2>
+          <p>November 18, 2024</p>
+          <h2>X co hires CCS Graduates</h2>
           <h3>Technology</h3>
           <p>
             Students explore smart devices and sensor-based
-            systems through hands-on Internet of Things activities.
+            systems through the start of career
           </p>
         </div>
 
         <div class="card">
-          <p>December 05, 2026</p>
+          <p>December 05, 2023</p>
           <h2>Technology Talk for Students</h2>
           <h3>Learning and Development</h3>
           <p>
@@ -48,22 +48,22 @@
         </div>
 
         <div class="card">
-          <p>December 15, 2026</p>
-          <h2>CCS Year-End Celebration</h2>
+          <p>November 23, 2021</p>
+          <h2>New Librarans</h2>
           <h3>Campus Community</h3>
           <p>
-            Students and members of the college community come
-            together to celebrate the year's accomplishments.
+            Congratulations to our new Librarians!
+            60% passing percentage...
           </p>
         </div>
 
         <div class="card">
-          <p>January 20, 2027</p>
-          <h2>Hackathon 2027</h2>
-          <h3>Innovation</h3>
+          <p>December 8,2021</p>
+          <h2>Signing Ceremony</h2>
+          <h3>Community Engagement</h3>
           <p>
-            Student teams develop creative technology solutions
-            to address real-world and campus-related challenges.
+            Memorandum of Agreement signing between
+            Central Philippine University(CPU)...
           </p>
         </div>
       </div>
@@ -111,7 +111,7 @@
 .card {
   background-color: #f7f4f7;
   padding: 30px 20px;
-  border: 2px groove #420d48;
+  border: 2px groove #1e480d;
   border-radius: 10px;
 }
 

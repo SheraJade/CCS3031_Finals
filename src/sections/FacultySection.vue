@@ -1,9 +1,9 @@
 <template>
-  <section class="officers" id="executive">
+  <section class="faculty" id="executive">
     <div class="container">
       <div class="title">
         <p>Leading With Passion and Purpose</p>
-        <h1>ITSO Officers</h1>
+        <h1>Faculty</h1>
       </div>
       <h2 class="department">Executive Board</h2>
       <div class="people">
@@ -67,7 +67,7 @@
 </template>
 
 <style scoped>
-.officers {
+.faculty {
   max-width: 100vw;
   min-height: 90vh;
   align-items: center;
@@ -159,7 +159,7 @@
 }
 
 @media (max-width: 768px) {
-  .officers {
+  .faculty {
     scroll-margin-top: 190px;
     padding: 60px 20px;
   }

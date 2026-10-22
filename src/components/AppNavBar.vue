@@ -22,11 +22,11 @@
           </div>
         </div>
         <div class="dropdown">
-          <RouterLink to="/officers">Officers</RouterLink>
+          <RouterLink to="/faculty">Faculty</RouterLink>
           <div class="submenu">
-            <a @click="goToSection('/officers', 'executive')">Executive Board</a>
-            <a @click="goToSection('/officers', 'committees')">Committees</a>
-            <a @click="goToSection('/officers', 'advisers')">Advisers</a>
+            <a @click="goToSection('/faculty', 'executive')">Executive Board</a>
+            <a @click="goToSection('/faculty', 'committees')">Committees</a>
+            <a @click="goToSection('/faculty', 'advisers')">Advisers</a>
           </div>
         </div>
         <RouterLink to="/News">News</RouterLink>
