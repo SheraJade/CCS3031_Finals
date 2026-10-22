@@ -1,4 +1,4 @@
-# ccs3031final_Alagos_Mediana_Alan
+# ccs3031_final
 
 This template should help get you started developing with Vue 3 in Vite.
 
