@@ -3,18 +3,24 @@
     <div class="container">
       <div class="left">
         <p class="sub-top">
-          The CCS core practices that build bridges between gaps
+          COLLEGE OF COMPUTER STUDIES
         </p>
 
         <h1 class="title">
-          HOME OF<br />
-          THE<br />
-          WARRIORS
+          Home of the<br />
+          Dauntless<br />
+          and the<br />
+          Brave.
         </h1>
 
         <h2 class="sub">
-          Different people, <strong>ONE</strong> goal
+          Different people. <strong>One Goal.</strong>
         </h2>
+
+        <p class="sub-top">
+          Discover your potential, create wit purpose,
+          and what comes next on technology.
+        </p>
 
         <button class="btn" @click="$router.push('/about')">
           About Us
@@ -55,6 +61,8 @@
   align-items: center;
   justify-content: space-between;
   gap: clamp(60px, 9vw, 150px);
+
+  transform: translateY(-50px);
 }
 
 .left {
@@ -154,7 +162,7 @@
 @media (max-width: 600px) {
   .home {
     min-height: auto;
-    padding: 35px 0 50px;
+    padding: 30px 0 40px;
     scroll-margin-top: 190px;
   }
 
