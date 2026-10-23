@@ -17,7 +17,7 @@
           <RouterLink to="/about">About</RouterLink>
           <div class="submenu">
             <a @click="goToSection('/about', 'history')">History</a>
-            <a @click="goToSection('/about', 'mission')">Mission and Vision</a>
+            <a @click="goToSection('/about', 'vision-mission')">Mission and Vision</a>
             <a @click="goToSection('/about', 'objectives')">Objectives</a>
           </div>
         </div>
@@ -29,7 +29,6 @@
           <RouterLink to="/contact">Contact</RouterLink>
           <div class="submenu">
             <a @click="goToSection('/contact', 'contact')">Contact Info</a>
-            <a @click="goToSection('/contact', 'faq')">FAQ</a>
           </div>
         </div>
       </div>
