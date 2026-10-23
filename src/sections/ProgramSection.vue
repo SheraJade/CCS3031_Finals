@@ -50,7 +50,7 @@
         <!-- Information Systems -->
         <router-link to="/programs/is" class="card">
           <div class="image">
-            <img src="@/assets/image/programs/lis.png" alt="IS" />
+            <img src="@/assets/image/programs/bliss.png" alt="IS" />
           </div>
           <h2>IS</h2>
           <h3>Information Systems</h3>
