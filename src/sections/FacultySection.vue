@@ -1,176 +1,340 @@
 
+<script setup>
+import cantelImage from '@/assets/image/people/cantel (1).jpg'
+import adorImage from '@/assets/image/people/ador.jpg'
+</script>
+
 <template>
-  <div class="dmia-page">
-    <!-- Header -->
+  <div class="page" id="faculty">
+
+    <!-- Page Header -->
     <header class="hero">
-      <p>COLLEGE OF COMPUTER STUDIES</p>
-      <h1>Bachelor of Science in</h1>
-      <h2>Digital Media and Interactive Arts</h2>
-      <p>
-        Combining creativity, technology, and digital innovation.
-      </p>
+      <div class="container">
+        <p class="eyebrow">College of Computer Studies</p>
+        <h1>Meet Our Faculty <span>&amp; Staff</span></h1>
+        <p class="lead">
+          Meet the educators, coordinators, and staff who inspire learning
+          and support our students every day.
+        </p>
+      </div>
     </header>
 
-    <!-- Overview -->
-    <section class="section">
-      <h2>Program Overview</h2>
-      <p>
-        The Bachelor of Science in Digital Media and Interactive Arts
-        (BSDMIA) develops students' creative and technical skills in
-        traditional arts, digital media, animation, and interactive
-        experiences for entertainment and corporate applications.
-      </p>
-    </section>
+    <main class="container main">
 
-    <!-- Objectives -->
-    <section class="section light">
-      <h2>Program Educational Objectives</h2>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Knowledge and Leadership</h3>
-          <p>Develop knowledge, skills, and leadership in technology careers.</p>
-        </article>
-
-        <article class="card">
-          <h3>Professionalism</h3>
-          <p>Work professionally and effectively with different teams.</p>
-        </article>
-
-        <article class="card">
-          <h3>Research and Service</h3>
-          <p>Participate in research and outreach activities for society.</p>
-        </article>
-
-        <article class="card">
-          <h3>Ethics and Responsibility</h3>
-          <p>Practice ethical values and social responsibility.</p>
-        </article>
-
-        <article class="card">
-          <h3>Digital Media Skills</h3>
-          <p>Use traditional and digital arts for creative solutions.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Areas of Study -->
-    <section class="section">
-      <h2>Areas of Study</h2>
-
-      <div class="cards">
-        <article class="card">
-          <h3>Video Editing</h3>
-          <p>Create and edit video content.</p>
-        </article>
-
-        <article class="card">
-          <h3>Animation</h3>
-          <p>Create movement and visual stories.</p>
-        </article>
-
-        <article class="card">
-          <h3>3D Modeling</h3>
-          <p>Design three-dimensional objects.</p>
-        </article>
-
-        <article class="card">
-          <h3>Photography</h3>
-          <p>Capture images and tell stories visually.</p>
-        </article>
-
-        <article class="card">
-          <h3>Graphic Design</h3>
-          <p>Create designs using images, colors, and typography.</p>
-        </article>
-
-        <article class="card">
-          <h3>Game Design</h3>
-          <p>Develop ideas for interactive games.</p>
-        </article>
-
-        <article class="card">
-          <h3>Virtual Reality</h3>
-          <p>Explore immersive digital environments.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- Images -->
-    <section class="section light">
-      <h2>Digital Media and Interactive Arts</h2>
-
-      <div class="image-grid">
-        <img
-          src="/src/assets/image/people/parreno.jpg"
-          alt="Digital Media and Interactive Arts"
-        />
-
-        <img
-          src="/src/assets/image/people/parreno.jpg"
-          alt="Digital Media and Interactive Arts"
-        />
-      </div>
-    </section>
-
-    <!-- Careers -->
-    <section class="section">
-      <h2>Career Opportunities</h2>
-
-      <div class="careers">
-        <span>Animator</span>
-        <span>Graphic Designer</span>
-        <span>Game Designer</span>
-        <span>Web Designer</span>
-        <span>Multimedia Artist</span>
-        <span>Advertising Executive</span>
-        <span>Art Director</span>
-        <span>Digital Artist</span>
-        <span>Freelance Artist</span>
-      </div>
-    </section>
-
-    <!-- Program Outcomes -->
-    <section class="section light">
-      <h2>Program Outcomes</h2>
-
-      <div class="outcomes">
-        <p><strong>DMIA01:</strong> Apply knowledge of mathematics and media arts.</p>
-        <p><strong>DMIA02:</strong> Identify user needs and create appropriate solutions.</p>
-        <p><strong>DMIA03:</strong> Combine traditional arts and digital media.</p>
-        <p><strong>DMIA04:</strong> Apply digital media in entertainment and corporate settings.</p>
-        <p><strong>DMIA05:</strong> Use current digital media tools and techniques.</p>
-        <p><strong>DMIA06:</strong> Work effectively in a team.</p>
-        <p><strong>DMIA07:</strong> Practice ethical, legal, and social responsibility.</p>
-        <p><strong>DMIA08:</strong> Communicate effectively.</p>
-        <p><strong>DMIA09:</strong> Understand current digital media practices and issues.</p>
-        <p><strong>DMIA10:</strong> Continue learning and developing professional skills.</p>
-      </div>
-    </section>
-
-    <!-- Coordinator -->
-    <section class="section">
-      <h2>Program Coordinator</h2>
-
-      <div class="coordinator">
-        <img
-          src="/src/assets/image/people/parreno.jpg"
-          alt="Ma'am Pinky"
-        />
-
-        <div>
-          <h3>Marjee Rose B. Parreño</h3>
-          <p>MSCS, MBA</p>
-          <p>BSDMIA Program Coordinator</p>
-          <p>College of Computer Studies</p>
+      <!-- College Dean -->
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">College Leadership</p>
+          <h2>College Dean</h2>
         </div>
-      </div>
-    </section>
+
+        <div class="featured-grid">
+          <article class="person featured-card">
+            <p class="role-label">College Dean</p>
+
+            <div class="image">
+              <img
+                src="@/assets/image/people/quijano.png"
+                alt="Ma. Christina A. Quijano"
+              />
+            </div>
+
+            <p class="department">College of Computer Studies</p>
+            <h3>Ma. Christina A. Quijano, MSCS</h3>
+          </article>
+        </div>
+      </section>
+
+      <!-- Department Head -->
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Academic Leadership</p>
+          <h2>Department Head and Coordinators</h2>
+        </div>
+
+        <div class="featured-grid department-head">
+          <article class="person featured-card">
+            <p class="role-label">Department Head</p>
+
+            <div class="image">
+              <img
+                src="@/assets/image/people/balontongg.jpg"
+                alt="Rea P. Balontong"
+              />
+            </div>
+
+            <p class="department">IT and IS Department</p>
+            <h3>Rea P. Balontong, MBA</h3>
+          </article>
+        </div>
+
+        <!-- Coordinators -->
+        <div class="people-grid three-columns">
+
+          <article class="person">
+            <p class="role-label">Program Coordinator</p>
+
+            <div class="image">
+              <img
+                src="@/assets/image/people/parreno.jpg"
+                alt="Marjee Rose B. Parreño"
+              />
+            </div>
+
+            <p class="department">
+              BSCS, BSDMIA, and MSCS Programs
+            </p>
+            <h3>Marjee Rose B. Parreño, MSCS, MBA</h3>
+          </article>
+
+          <article class="person">
+            <p class="role-label">Program Coordinator</p>
+
+            <div class="image">
+              <img
+                :src="cantelImage"
+                alt="Ana Mae B. Cantel"
+              />
+            </div>
+
+            <p class="department">BLIS and MLIS Programs</p>
+            <h3>Ana Mae B. Cantel, MLIS</h3>
+          </article>
+
+          <article class="person">
+            <p class="role-label">Laboratory Coordinator</p>
+
+            <div class="image">
+              <img
+                src="@/assets/image/people/pajar.jpg"
+                alt="Lennon D. Pajar"
+              />
+            </div>
+
+            <p class="department">Computer Laboratory</p>
+            <h3>Lennon D. Pajar</h3>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Faculty Members -->
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Our Educators</p>
+          <h2>Faculty by Program</h2>
+          <p class="section-description">
+            Explore the faculty members listed under their assigned programs.
+          </p>
+        </div>
+
+        <!-- BSIT and BSIS -->
+        <div class="program-group">
+          <h3 class="program-heading">BSIT and BSIS Program</h3>
+
+          <div class="people-grid">
+
+            <article class="person">
+              <p class="role-label">Faculty</p>
+              <div class="image">
+                <img
+                  src="@/assets/image/people/beldia.jpg"
+                  alt="Leo Paulo B. Beldia"
+                />
+              </div>
+              <p class="department">BSIT and BSIS Program</p>
+              <h3>Leo Paulo B. Beldia</h3>
+            </article>
+
+            <article class="person">
+              <p class="role-label">Faculty</p>
+              <div class="image">
+                <img
+                  src="@/assets/image/people/dignadice.jpg"
+                  alt="Lesley Joy L. Dignadice"
+                />
+              </div>
+              <p class="department">BSIT and BSIS Program</p>
+              <h3>Lesley Joy L. Dignadice, MBA</h3>
+            </article>
+
+            <article class="person">
+              <p class="role-label">Faculty</p>
+              <div class="image">
+                <img
+                  src="@/assets/image/people/eregia.jpg"
+                  alt="Rodolfo C. Eregia Jr."
+                />
+              </div>
+              <p class="department">BSIT and BSIS Program</p>
+              <h3>Rodolfo C. Eregia, Jr.</h3>
+            </article>
+
+            <article class="person">
+              <p class="role-label">Faculty</p>
+              <div class="image">
+                <img
+                  src="@/assets/image/people/jardleza.jpg"
+                  alt="Donie S. Jardeleza"
+                />
+              </div>
+              <p class="department">BSIT and BSIS Program</p>
+              <h3>Donie S. Jardeleza, MSCS</h3>
+            </article>
+
+            <article class="person">
+              <p class="role-label">Faculty</p>
+              <div class="image">
+                <img
+                  src="@/assets/image/people/montano.jpg"
+                  alt="Antonio M. Montaño Jr."
+                />
+              </div>
+              <p class="department">BSIT and BSIS Program</p>
+              <h3>Antonio M. Montaño, Jr.</h3>
+            </article>
+
+            <article class="person">
+              <p class="role-label">Faculty</p>
+              <div class="image">
+                <img
+                  src="@/assets/image/people/oja.jpg"
+                  alt="Rose Leah Joy A. Ojacastro"
+                />
+              </div>
+              <p class="department">BSIT and BSIS Program</p>
+              <h3>Rose Leah Joy A. Ojacastro, MSCS</h3>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- BSCS -->
+        <div class="program-group">
+          <h3 class="program-heading">BSCS Program</h3>
+
+          <div class="people-grid two-columns">
+
+            <article class="person">
+              <p class="role-label">Faculty</p>
+              <div class="image">
+                <img
+                  src="@/assets/image/people/cambronero.jpg"
+                  alt="Pedro Peter Rhys B. Cambronero"
+                />
+              </div>
+              <p class="department">BSCS Program</p>
+              <h3>Pedro Peter Rhys B. Cambronero, MSCS</h3>
+            </article>
+
+            <article class="person">
+              <p class="role-label">Faculty</p>
+              <div class="image">
+                <img
+                  src="@/assets/image/people/sapul.jpg"
+                  alt="Ma. Sheila C. Sapul"
+                />
+              </div>
+              <p class="department">BSCS Program</p>
+              <h3>Ma. Sheila C. Sapul, Ph. D.</h3>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- BSDMIA -->
+        <div class="program-group">
+          <h3 class="program-heading">BSDMIA Program</h3>
+
+          <div class="program-note">
+            <p>
+              Individual faculty details for the BSDMIA Program
+              have not yet been added.
+            </p>
+          </div>
+        </div>
+
+        <!-- BLIS -->
+        <div class="program-group">
+          <h3 class="program-heading">BLIS Program</h3>
+
+          <div class="program-note">
+            <p>
+              Individual faculty details for the BLIS Program
+              have not yet been added.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Staff -->
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Here to Help</p>
+          <h2>Staff</h2>
+        </div>
+
+        <div class="people-grid four-columns">
+
+          <article class="person">
+            <p class="role-label">Secretary</p>
+            <div class="image">
+              <img
+                src="@/assets/image/people/castano.jpg"
+                alt="Chrislyn C. Castaño"
+              />
+            </div>
+            <p class="department">College of Computer Studies</p>
+            <h3>Chrislyn C. Castaño</h3>
+          </article>
+
+          <article class="person">
+            <p class="role-label">Computer Laboratory Technician</p>
+            <div class="image">
+              <img
+                src="@/assets/image/people/taasan.jpg"
+                alt="A.M.P. Latter P. Taasan"
+              />
+            </div>
+            <p class="department">Computer Laboratory</p>
+            <h3>A.M.P. Latter P. Taasan</h3>
+          </article>
+
+          <article class="person">
+            <p class="role-label">Guidance Counselor</p>
+            <div class="image">
+              <img
+                :src="adorImage"
+                alt="Chriselda Elaine Ador"
+              />
+            </div>
+            <p class="department">Student Guidance and Support</p>
+            <h3>Chriselda Elaine Ador</h3>
+          </article>
+
+          <article class="person">
+            <p class="role-label">Library Liaison Officer</p>
+            <div class="image">
+              <img
+                src="@/assets/image/people/rivera.png"
+                alt="Donna May Rivera"
+              />
+            </div>
+            <p class="department">Library Services</p>
+            <h3>Donna May Rivera</h3>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
-      <p>College of Computer Studies | BSDMIA</p>
+    <footer class="site-footer">
+      <p>College of Computer Studies</p>
+      <p>Faculty and Staff</p>
     </footer>
+
   </div>
 </template>
 
@@ -179,169 +343,375 @@
   box-sizing: border-box;
 }
 
-.dmia-page {
-  font-family: Arial, sans-serif;
-  color: #26372d;
-  line-height: 1.6;
+.page {
+  min-height: 100vh;
+  background-color: #fbfaf6;
+  color: #17382d;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Page Header */
 .hero {
-  padding: 65px 20px;
+  background-color: #064e3b;
+  background-image: linear-gradient(135deg, #087653, #064e3b);
+  color: #ffffff;
+  padding: 180px 0 80px;
   text-align: center;
-  color: white;
-  background: #155b3b;
+  border-bottom: 4px solid #e5b94f;
 }
 
-.hero p:first-child {
-  color: #e0bd58;
-  font-weight: bold;
+.eyebrow {
+  margin: 0 0 10px;
+  color: #b9953b;
+  font-size: 13px;
+  font-weight: 700;
   letter-spacing: 2px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.hero .eyebrow {
+  color: #f8e7ae;
 }
 
 .hero h1 {
-  margin-bottom: 5px;
-  font-size: 2rem;
+  margin: 0;
+  color: #fffdf6;
+  font-size: 38px;
+  line-height: 1.25;
 }
 
-.hero h2 {
-  margin-top: 5px;
-  color: #e0bd58;
-  font-size: 2.2rem;
+.hero h1 span {
+  color: #e5b94f;
+}
+
+.lead {
+  max-width: 620px;
+  margin: 18px auto 0;
+  color: #e2f1e8;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Main Content */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  padding-top: 55px;
+  padding-bottom: 60px;
 }
 
 .section {
-  max-width: 1100px;
-  margin: auto;
-  padding: 45px 25px;
+  width: 100%;
 }
 
-.section h2 {
-  margin-bottom: 25px;
-  color: #155b3b;
+.section-heading {
+  margin-bottom: 30px;
   text-align: center;
 }
 
-.light {
-  max-width: none;
-  background: #f7f7f0;
+.section-heading .eyebrow {
+  color: #8a7850;
 }
 
-.cards {
+.section-heading h2 {
+  margin: 0;
+  color: #064e3b;
+  font-size: 28px;
+  line-height: 1.35;
+}
+
+.section-description {
+  max-width: 600px;
+  margin: 12px auto 0;
+  color: #64766c;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Faculty Cards */
+.person {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 18px;
+  border: 1px solid #e5d8b5;
+  border-radius: 10px;
+  background-color: #fffdf7;
+  text-align: center;
+  box-shadow: 0 5px 16px rgba(6, 78, 59, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.person:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(6, 78, 59, 0.15);
+}
+
+.role-label {
+  min-height: 20px;
+  margin: 0 0 15px;
+  color: #087653;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.image {
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  height: 220px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 18px;
+  border: 3px solid #f8e7ae;
+  border-radius: 8px;
+  background-color: #e0eee5;
+}
+
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.person h3 {
+  margin: 8px 0 0;
+  color: #064e3b;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.department {
+  margin: 0;
+  color: #567166;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Featured Cards */
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.featured-card {
+  max-width: 350px;
+  padding: 28px 24px;
+  border-top: 4px solid #e5b94f;
+}
+
+.featured-card .image {
+  max-width: 245px;
+  height: 270px;
+}
+
+.featured-card h3 {
+  font-size: 19px;
+}
+
+.department-head .featured-card {
+  max-width: 310px;
+}
+
+.department-head .image {
+  max-width: 205px;
+  height: 225px;
+}
+
+/* Grid Layouts */
+.people-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  max-width: 1050px;
-  margin: auto;
+  align-items: stretch;
+  gap: 22px;
 }
 
-.card {
-  padding: 20px;
-  border: 1px solid #e4e5dc;
-  border-top: 4px solid #d5aa42;
-  border-radius: 8px;
-  background: white;
+.three-columns {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.card h3 {
-  color: #155b3b;
+.two-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 790px;
+  margin: 0 auto;
 }
 
-.card p {
+.four-columns {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.four-columns .person {
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.four-columns .image {
+  max-width: 180px;
+  height: 200px;
+}
+
+/* Program Sections */
+.program-group {
+  margin-bottom: 40px;
+}
+
+.program-group:last-child {
   margin-bottom: 0;
 }
 
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  max-width: 850px;
-  margin: auto;
-}
-
-.image-grid img {
-  width: 100%;
-  height: 280px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.careers {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-.careers span {
-  padding: 10px 16px;
-  border-radius: 5px;
-  background: #155b3b;
-  color: white;
-}
-
-.outcomes {
-  max-width: 850px;
-  margin: auto;
-}
-
-.outcomes p {
-  padding: 12px;
-  border-bottom: 1px solid #ddd;
-}
-
-.outcomes strong {
-  color: #155b3b;
-}
-
-.coordinator {
+.program-heading {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 25px;
-  max-width: 650px;
-  margin: auto;
-  padding: 25px;
+  gap: 14px;
+  margin: 0 0 22px;
+  color: #064e3b;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.program-heading::after {
+  height: 1px;
+  flex: 1;
+  content: "";
+  background-color: #d5dfd8;
+}
+
+.program-note {
+  padding: 22px;
+  border: 1px solid #e2e8e3;
   border-radius: 8px;
-  background: #f7f7f0;
-}
-
-.coordinator img {
-  width: 160px;
-  height: 180px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.coordinator h3 {
-  color: #155b3b;
-}
-
-.footer {
-  padding: 20px;
-  background: #103f2b;
-  color: white;
+  background-color: #ffffff;
+  color: #64766c;
+  font-size: 14px;
+  line-height: 1.7;
   text-align: center;
 }
 
-@media (max-width: 700px) {
-  .cards {
+.program-note p {
+  margin: 0;
+}
+
+/* Footer */
+.site-footer {
+  padding: 25px 20px;
+  border-top: 1px solid #e2e8e3;
+  background-color: #064e3b;
+  color: #e2f1e8;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.site-footer p {
+  margin: 3px 0;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .people-grid,
+  .three-columns,
+  .four-columns {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero h2 {
-    font-size: 1.7rem;
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }
 
-@media (max-width: 480px) {
-  .cards,
-  .image-grid {
-    grid-template-columns: 1fr;
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    padding-right: 59px;
+    padding-left: 16px;
   }
 
-  .coordinator {
-    flex-direction: column;
-    text-align: center;
+  .hero {
+    padding: 160px 0 80px;
+  }
+
+  .hero h1 {
+    font-size: 29px;
+  }
+
+  .lead {
+    font-size: 14px;
+  }
+
+  .main {
+    gap: 42px;
+    padding-top: 160px;
+    padding-bottom: 45px;
+  }
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+
+  .section-heading h2 {
+    font-size: 23px;
+  }
+
+  .people-grid,
+  .three-columns,
+  .two-columns,
+  .four-columns {
+    grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    max-width: 390px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .person {
+    padding: 22px 18px;
+  }
+
+  .image {
+    max-width: 230px;
+    height: 245px;
+  }
+
+  .program-heading {
+    font-size: 17px;
+  }
+
+  .featured-card .image {
+    max-width: 230px;
+    height: 250px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .person {
+    transition: none;
+  }
+
+  .person:hover {
+    transform: none;
   }
 }
 </style>
