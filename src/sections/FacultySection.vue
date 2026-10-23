@@ -1,683 +1,493 @@
 
-<template>
-  <main class="faculty-page" id="faculty">
-    <div class="container">
-
-      <!-- 1. PAGE HEADER -->
-      <header class="page-header">
-        <p class="eyebrow">Teaching as a Way of Life</p>
-        <h1>Faculty and Staff</h1>
-        <p class="intro">
-          Meet the educators, coordinators, and staff who support
-          the College of Computer Studies.
-        </p>
-        <div class="header-line" aria-hidden="true"></div>
-      </header>
-
-      <!-- 2. COLLEGE DEAN -->
-      <section class="faculty-section">
-        <SectionHeading
-          eyebrow="College Leadership"
-          title="College Dean"
-        />
-
-        <div class="dean-layout">
-          <article class="person dean-card">
-            <p class="role-label">College Dean</p>
-
-            <div class="image">
-              <img
-                src="@/assets/image/people/quijano.png"
-                alt="Ma. Christina A. Quijano"
-              />
-            </div>
-
-            <p class="department">College of Computer Studies</p>
-            <h3 class="person-name">Ma. Christina A. Quijano, MSCS</h3>
-          </article>
-        </div>
-      </section>
-
-      <!-- 3. DEPARTMENT HEAD AND COORDINATORS -->
-      <section class="faculty-section">
-        <SectionHeading
-          eyebrow="Academic Leadership"
-          title="Department Head and Coordinators"
-        />
-
-        <!-- Department Head is centered above the coordinators -->
-        <div class="department-head-layout">
-          <article class="person department-head-card">
-            <p class="role-label">Department Head</p>
-
-            <div class="image">
-              <img
-                src="@/assets/image/people/balontongg.jpg"
-                alt="Rea P. Balontong"
-              />
-            </div>
-
-            <p class="department">IT and IS Department</p>
-            <h3 class="person-name">Rea P. Balontong, MBA</h3>
-          </article>
-        </div>
-
-        <!-- Coordinators share one evenly aligned row -->
-        <div class="coordinator-grid">
-
-          <article class="person">
-            <p class="role-label">Program Coordinator</p>
-
-            <div class="image">
-              <img
-                src="@/assets/image/people/parreno.jpg"
-                alt="Marjee Rose B. Parreño"
-              />
-            </div>
-
-            <p class="department">BSCS, BSDMIA, and MSCS Programs</p>
-            <h3 class="person-name">
-              Marjee Rose B. Parreño, MSCS, MBA
-            </h3>
-          </article>
-
-          <article class="person">
-            <p class="role-label">Program Coordinator</p>
-
-            <div class="image">
-              <img
-                :src="cantelImage"
-                alt="Ana Mae B. Cantel"
-              />
-            </div>
-
-            <p class="department">BLIS and MLIS Programs</p>
-            <h3 class="person-name">Ana Mae B. Cantel, MLIS</h3>
-          </article>
-
-          <article class="person">
-            <p class="role-label">Laboratory Coordinator</p>
-
-            <div class="image">
-              <img
-                src="@/assets/image/people/pajar.jpg"
-                alt="Lennon D. Pajar"
-              />
-            </div>
-
-            <p class="department">Computer Laboratory</p>
-            <h3 class="person-name">Lennon D. Pajar</h3>
-          </article>
-
-        </div>
-      </section>
-
-      <!-- 4. FACULTY MEMBERS -->
-      <section class="faculty-section">
-        <SectionHeading
-          eyebrow="Our Educators"
-          title="Faculty by Program"
-        />
-
-        <!-- BSIT AND BSIS -->
-        <div class="program-group">
-          <h3 class="program-heading">BSIT and BSIS Program</h3>
-
-          <div class="people-grid">
-
-            <article class="person">
-              <p class="role-label">Faculty</p>
-              <div class="image">
-                <img
-                  src="@/assets/image/people/beldia.jpg"
-                  alt="Leo Paulo B. Beldia"
-                />
-              </div>
-              <p class="department">BSIT and BSIS Program</p>
-              <h3 class="person-name">Leo Paulo B. Beldia</h3>
-            </article>
-
-            <article class="person">
-              <p class="role-label">Faculty</p>
-              <div class="image">
-                <img
-                  src="@/assets/image/people/dignadice.jpg"
-                  alt="Lesley Joy L. Dignadice"
-                />
-              </div>
-              <p class="department">BSIT and BSIS Program</p>
-              <h3 class="person-name">Lesley Joy L. Dignadice, MBA</h3>
-            </article>
-
-            <article class="person">
-              <p class="role-label">Faculty</p>
-              <div class="image">
-                <img
-                  src="@/assets/image/people/eregia.jpg"
-                  alt="Rodolfo C. Eregia Jr."
-                />
-              </div>
-              <p class="department">BSIT and BSIS Program</p>
-              <h3 class="person-name">Rodolfo C. Eregia, Jr.</h3>
-            </article>
-
-            <article class="person">
-              <p class="role-label">Faculty</p>
-              <div class="image">
-                <img
-                  src="@/assets/image/people/jardleza.jpg"
-                  alt="Donie S. Jardeleza"
-                />
-              </div>
-              <p class="department">BSIT and BSIS Program</p>
-              <h3 class="person-name">Donie S. Jardeleza, MSCS</h3>
-            </article>
-
-            <article class="person">
-              <p class="role-label">Faculty</p>
-              <div class="image">
-                <img
-                  src="@/assets/image/people/montano.jpg"
-                  alt="Antonio M. Montaño Jr."
-                />
-              </div>
-              <p class="department">BSIT and BSIS Program</p>
-              <h3 class="person-name">Antonio M. Montaño, Jr.</h3>
-            </article>
-
-            <article class="person">
-              <p class="role-label">Faculty</p>
-              <div class="image">
-                <img
-                  src="@/assets/image/people/oja.jpg"
-                  alt="Rose Leah Joy A. Ojacastro"
-                />
-              </div>
-              <p class="department">BSIT and BSIS Program</p>
-              <h3 class="person-name">Rose Leah Joy A. Ojacastro, MSCS</h3>
-            </article>
-
-          </div>
-        </div>
-
-        <!-- BSCS -->
-        <div class="program-group">
-          <h3 class="program-heading">BSCS Program</h3>
-
-          <div class="people-grid people-grid--two">
-
-            <article class="person">
-              <p class="role-label">Faculty</p>
-              <div class="image">
-                <img
-                  src="@/assets/image/people/cambronero.jpg"
-                  alt="Pedro Peter Rhys B. Cambronero"
-                />
-              </div>
-              <p class="department">BSCS Program</p>
-              <h3 class="person-name">
-                Pedro Peter Rhys B. Cambronero, MSCS
-              </h3>
-            </article>
-
-            <article class="person">
-              <p class="role-label">Faculty</p>
-              <div class="image">
-                <img
-                  src="@/assets/image/people/sapul.jpg"
-                  alt="Ma. Sheila C. Sapul"
-                />
-              </div>
-              <p class="department">BSCS Program</p>
-              <h3 class="person-name">Ma. Sheila C. Sapul, Ph. D.</h3>
-            </article>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- 5. STAFF -->
-      <section class="faculty-section">
-        <SectionHeading
-          eyebrow="Here to Help"
-          title="Staff"
-        />
-
-        <div class="staff-grid">
-
-          <article class="person">
-            <p class="role-label">Secretary</p>
-            <div class="image">
-              <img
-                src="@/assets/image/people/castano.jpg"
-                alt="Chrislyn C. Castaño"
-              />
-            </div>
-            <p class="department">College of Computer Studies</p>
-            <h3 class="person-name">Chrislyn C. Castaño</h3>
-          </article>
-
-          <article class="person">
-            <p class="role-label">Computer Laboratory Technician</p>
-            <div class="image">
-              <img
-                src="@/assets/image/people/taasan.jpg"
-                alt="A.M.P. Latter P. Taasan"
-              />
-            </div>
-            <p class="department">Computer Laboratory</p>
-            <h3 class="person-name">A.M.P. Latter P. Taasan</h3>
-          </article>
-
-          <article class="person">
-            <p class="role-label">Guidance Counselor</p>
-            <div class="image placeholder" aria-label="Photo unavailable">
-              CA
-            </div>
-            <p class="department">Student Guidance and Support</p>
-            <h3 class="person-name">Chriselda Elaine Ador</h3>
-          </article>
-
-          <article class="person">
-            <p class="role-label">Library Liaison Officer</p>
-            <div class="image">
-              <img
-                src="@/assets/image/people/rivera.png"
-                alt="Donna May Rivera"
-              />
-            </div>
-            <p class="department">Library Services</p>
-            <h3 class="person-name">Donna May Rivera</h3>
-          </article>
-
-        </div>
-      </section>
-
-    </div>
-  </main>
-</template>
-
 <script setup>
-// 6. IMPORTS
-import { h } from 'vue'
-
-// The filename includes a space and parentheses.
-// Importing it here allows Vite to resolve the image correctly.
 import cantelImage from '@/assets/image/people/cantel (1).jpg'
-
-// Reusable section heading used throughout the page.
-const SectionHeading = (props) =>
-  h('div', { class: 'section-title' }, [
-    h('p', { class: 'eyebrow' }, props.eyebrow),
-    h('h2', props.title)
-  ])
 </script>
 
-<style scoped>
-/* 7. MAIN PAGE THEME */
-.faculty-page {
-  --green-dark: #484f0a;
-  --green: #087653;
-  --green-light: #e8f4ec;
-  --gold: #e5b94f;
-  --gold-light: #f8e7ae;
-  --text: #17382d;
-  --muted: #567166;
+<template>
+  <div class="page" id="faculty">
 
-  min-height: 60vh;
-  padding: 76px 28px;
-  scroll-margin-top: 100px;
-  color: var(--text);
-  background:
-    radial-gradient(
-      ellipse at top,
-      rgba(229, 185, 79, 0.13),
-      transparent 38%
-    ),
-    linear-gradient(
-      145deg,
-      #064e3b 0%,
-      #087653 58%,
-      #07553f 100%
-    );
+    <!-- Page Header -->
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">COLLEGE OF COMPUTER STUDIES</p>
+        <h1>Meet Our Faculty <span>& Staff</span></h1>
+        <p class="lead">
+          Meet the educators, coordinators, and staff who inspire
+          learning and support our students every day.
+        </p>
+        <div class="header-line"></div>
+      </div>
+    </header>
+
+    <main class="container main">
+
+      <!-- College Dean -->
+      <section class="section">
+        <p class="section-label">LEADERSHIP</p>
+        <h2>College Dean</h2>
+
+        <div class="people-grid one">
+          <article class="person featured">
+            <p class="role">College Dean</p>
+            <img
+              src="@/assets/image/people/quijano.png"
+              alt="Ma. Christina A. Quijano"
+            />
+            <p class="department">College of Computer Studies</p>
+            <h3>Ma. Christina A. Quijano, MSCS</h3>
+          </article>
+        </div>
+      </section>
+
+      <!-- Department Head and Coordinators -->
+      <section class="section">
+        <p class="section-label">ACADEMIC LEADERSHIP</p>
+        <h2>Department Head and Coordinators</h2>
+
+        <div class="people-grid one">
+          <article class="person featured">
+            <p class="role">Department Head</p>
+            <img
+              src="@/assets/image/people/balontongg.jpg"
+              alt="Rea P. Balontong"
+            />
+            <p class="department">IT and IS Department</p>
+            <h3>Rea P. Balontong, MBA</h3>
+          </article>
+        </div>
+
+        <div class="people-grid three">
+
+          <article class="person">
+            <p class="role">Program Coordinator</p>
+            <img
+              src="@/assets/image/people/parreno.jpg"
+              alt="Marjee Rose B. Parreño"
+            />
+            <p class="department">BSCS, BSDMIA, and MSCS Programs</p>
+            <h3>Marjee Rose B. Parreño, MSCS, MBA</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Program Coordinator</p>
+            <img
+              :src="cantelImage"
+              alt="Ana Mae B. Cantel"
+            />
+            <p class="department">BLIS and MLIS Programs</p>
+            <h3>Ana Mae B. Cantel, MLIS</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Laboratory Coordinator</p>
+            <img
+              src="@/assets/image/people/pajar.jpg"
+              alt="Lennon D. Pajar"
+            />
+            <p class="department">Computer Laboratory</p>
+            <h3>Lennon D. Pajar</h3>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- BSIT and BSIS Faculty -->
+      <section class="section">
+        <p class="section-label">OUR EDUCATORS</p>
+        <h2>BSIT and BSIS Program</h2>
+
+        <div class="people-grid three">
+
+          <article class="person">
+            <p class="role">Faculty</p>
+            <img src="@/assets/image/people/beldia.jpg" alt="Leo Paulo B. Beldia" />
+            <p class="department">BSIT and BSIS Program</p>
+            <h3>Leo Paulo B. Beldia</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Faculty</p>
+            <img src="@/assets/image/people/dignadice.jpg" alt="Lesley Joy L. Dignadice" />
+            <p class="department">BSIT and BSIS Program</p>
+            <h3>Lesley Joy L. Dignadice, MBA</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Faculty</p>
+            <img src="@/assets/image/people/eregia.jpg" alt="Rodolfo C. Eregia Jr." />
+            <p class="department">BSIT and BSIS Program</p>
+            <h3>Rodolfo C. Eregia, Jr.</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Faculty</p>
+            <img src="@/assets/image/people/jardleza.jpg" alt="Donie S. Jardeleza" />
+            <p class="department">BSIT and BSIS Program</p>
+            <h3>Donie S. Jardeleza, MSCS</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Faculty</p>
+            <img src="@/assets/image/people/montano.jpg" alt="Antonio M. Montaño Jr." />
+            <p class="department">BSIT and BSIS Program</p>
+            <h3>Antonio M. Montaño, Jr.</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Faculty</p>
+            <img src="@/assets/image/people/oja.jpg" alt="Rose Leah Joy A. Ojacastro" />
+            <p class="department">BSIT and BSIS Program</p>
+            <h3>Rose Leah Joy A. Ojacastro, MSCS</h3>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- BSCS Faculty -->
+      <section class="section">
+        <p class="section-label">COMPUTER SCIENCE</p>
+        <h2>BSCS Program</h2>
+
+        <div class="people-grid two">
+
+          <article class="person">
+            <p class="role">Faculty</p>
+            <img
+              src="@/assets/image/people/cambronero.jpg"
+              alt="Pedro Peter Rhys B. Cambronero"
+            />
+            <p class="department">BSCS Program</p>
+            <h3>Pedro Peter Rhys B. Cambronero, MSCS</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Faculty</p>
+            <img
+              src="@/assets/image/people/sapul.jpg"
+              alt="Ma. Sheila C. Sapul"
+            />
+            <p class="department">BSCS Program</p>
+            <h3>Ma. Sheila C. Sapul, Ph. D.</h3>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- BSDMIA Faculty -->
+      <section class="section">
+        <p class="section-label">DATA AND INFORMATION</p>
+        <h2>BSDMIA Program</h2>
+
+        <p class="notice">
+          Faculty profiles will be added after the official
+          teaching assignments are verified.
+        </p>
+      </section>
+
+      <!-- BLIS Faculty -->
+      <section class="section">
+        <p class="section-label">LIBRARY AND INFORMATION SCIENCE</p>
+        <h2>BLIS Program</h2>
+
+        <p class="notice">
+          Faculty profiles will be added after the official
+          teaching assignments are verified.
+        </p>
+      </section>
+
+      <!-- Staff -->
+      <section class="section">
+        <p class="section-label">HERE TO HELP</p>
+        <h2>Our Staff</h2>
+
+        <div class="people-grid four">
+
+          <article class="person">
+            <p class="role">Secretary</p>
+            <img src="@/assets/image/people/castano.jpg" alt="Chrislyn C. Castaño" />
+            <p class="department">College of Computer Studies</p>
+            <h3>Chrislyn C. Castaño</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Computer Laboratory Technician</p>
+            <img src="@/assets/image/people/taasan.jpg" alt="A.M.P. Latter P. Taasan" />
+            <p class="department">Computer Laboratory</p>
+            <h3>A.M.P. Latter P. Taasan</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Guidance Counselor</p>
+            <img src="@/assets/image/people/ador.jpg" alt="Chriselda Elaine Ador" />
+            <p class="department">Student Guidance and Support</p>
+            <h3>Chriselda Elaine Ador</h3>
+          </article>
+
+          <article class="person">
+            <p class="role">Library Liaison Officer</p>
+            <img src="@/assets/image/people/rivera.png" alt="Donna May Rivera" />
+            <p class="department">Library Services</p>
+            <h3>Donna May Rivera</h3>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>College of Computer Studies</p>
+      <p>Inspiring knowledge. Building futures.</p>
+    </footer>
+
+  </div>
+</template>
+
+<style scoped>
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #10916f;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
-  width: min(100%, 1180px);
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 0 24px;
 }
 
-/* 8. PAGE HEADER */
-.page-header {
-  max-width: 760px;
-  margin: 0 auto 68px;
+/* Header */
+.hero {
+  padding: 180px 0 90px;
   text-align: center;
+  color: white;
+  background: linear-gradient(135deg, #10916f, #1e7258);
+  border-bottom: 4px solid #e5b94f;
 }
 
 .eyebrow {
   margin: 0 0 12px;
-  color: var(--gold);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.15em;
-  line-height: 1.5;
-  text-transform: uppercase;
+  color: #e5b94f;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
-.page-header h1 {
-  margin: 0;
-  color: #fffdf6;
-  font-size: clamp(2.25rem, 5vw, 3.4rem);
-  font-weight: 800;
-  letter-spacing: -0.035em;
-  line-height: 1.12;
+.hero h1 {
+  margin: 0 0 18px;
+  color: white;
+  font-size: 42px;
+  line-height: 1.25;
 }
 
-.intro {
-  max-width: 590px;
-  margin: 18px auto 0;
+.hero h1 span {
+  color: #e5b94f;
+}
+
+.lead {
+  max-width: 600px;
+  margin: 0 auto;
   color: #e2f1e8;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 1.8;
 }
 
 .header-line {
-  width: 76px;
+  width: 75px;
   height: 4px;
-  margin: 25px auto 0;
-  border-radius: 999px;
-  background: var(--gold);
+  margin: 24px auto 0;
+  border-radius: 5px;
+  background-color: #e5b94f;
 }
 
-/* 9. SECTION SPACING AND TITLES */
-.faculty-section {
-  margin-bottom: 76px;
+/* Main Content */
+.main {
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 
-.section-title {
-  margin-bottom: 30px;
+.section {
+  margin-bottom: 60px;
+}
+
+.section h2 {
+  margin: 0 0 28px;
+  color: #000000;
+  font-size: 26px;
   text-align: center;
 }
 
-.section-title h2 {
-  margin: 0;
-  color: #fffdf6;
-  font-size: clamp(1.55rem, 3vw, 2rem);
-  font-weight: 750;
-  letter-spacing: -0.02em;
-  line-height: 1.3;
+.section-label {
+  margin: 0 0 8px;
+  color: #cc9f34;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
-/* 10. GENERAL PROFILE CARDS */
+/* Faculty Cards */
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 22px;
+  margin-bottom: 25px;
+}
+
+.one {
+  grid-template-columns: 1fr;
+  max-width: 340px;
+  margin: 0 auto 25px;
+}
+
+.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .person {
-  display: flex;
-  box-sizing: border-box;
-  width: 100%;
-  min-width: 0;
-  height: 100%;
-  flex-direction: column;
-  align-items: center;
-  padding: 24px 20px 26px;
-  border: 1px solid rgba(229, 185, 79, 0.75);
-  border-radius: 18px;
-  background: #fffdf7;
+  padding: 25px 18px;
+  border: 1px solid #e5b94f;
+  border-top: 4px solid #e5b94f;
+  border-radius: 14px;
+  background-color: #fffdf7;
   text-align: center;
-  box-shadow: 0 10px 26px rgba(0, 30, 20, 0.15);
-  transition:
-    transform 220ms ease,
-    box-shadow 220ms ease,
-    border-color 220ms ease;
+  box-shadow: 0 5px 15px rgba(0, 30, 20, 0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .person:hover {
   transform: translateY(-5px);
-  border-color: var(--gold);
-  box-shadow: 0 16px 34px rgba(0, 25, 17, 0.24);
+  box-shadow: 0 10px 22px rgba(0, 30, 20, 0.25);
 }
 
-.role-label {
-  min-height: 22px;
-  margin: 0 0 16px;
-  color: var(--green);
-  font-size: 0.82rem;
-  font-weight: 800;
-  letter-spacing: 0.025em;
-  line-height: 1.4;
-}
-
-.department {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.84rem;
-  line-height: 1.55;
-}
-
-.person-name {
-  margin: 9px 0 0;
-  color: var(--green-dark);
-  font-size: 1.05rem;
-  font-weight: 800;
-  line-height: 1.45;
-  overflow-wrap: anywhere;
-}
-
-/* 11. PROFILE PHOTOS
-   Fixed image dimensions prevent oversized photos. */
-.person .image {
-  display: flex;
-  box-sizing: border-box;
-  width: min(100%, 210px);
-  height: 230px;
-  flex: 0 0 auto;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin: 0 auto 18px;
-  border: 3px solid var(--gold-light);
-  border-radius: 13px;
-  background: #e0eee5;
-  box-shadow: 0 4px 13px rgba(6, 78, 59, 0.12);
-}
-
-.person .image img {
+.person img {
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 190px;
+  height: 210px;
+  max-width: 100%;
+  margin: 0 auto 18px;
+  border: 3px solid #f8e7ae;
+  border-radius: 12px;
   object-fit: cover;
   object-position: center 25%;
 }
 
-/* Placeholder for staff members without an available photo */
-.person .placeholder {
-  color: var(--green-dark);
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 0.04em;
+.featured {
+  border-top: 5px solid #e5b94f;
 }
 
-/* 12. COLLEGE DEAN */
-.dean-layout {
-  display: flex;
-  justify-content: center;
+.featured img {
+  width: 210px;
+  height: 230px;
 }
 
-.dean-card {
-  width: min(100%, 350px);
-  height: auto;
-  padding: 30px 28px;
-  border-top: 5px solid var(--gold);
+.role {
+  min-height: 22px;
+  margin: 0 0 15px;
+  color: #087653;
+  font-size: 13px;
+  font-weight: bold;
 }
 
-.dean-card .image {
-  width: min(100%, 245px);
-  height: 270px;
+.department {
+  margin: 0;
+  color: #567166;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
-.dean-card .person-name {
-  font-size: 1.16rem;
+.person h3 {
+  margin: 8px 0 0;
+  color: #484f0a;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
-/* 13. DEPARTMENT HEAD
-   Keep this card centered above the coordinators. */
-.department-head-layout {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 28px;
-}
-
-.department-head-card {
-  width: min(100%, 310px);
-  height: auto;
-  border-top: 4px solid var(--gold);
-}
-
-.department-head-card .image {
-  width: min(100%, 205px);
-  height: 225px;
-}
-
-/* 14. GRID LAYOUTS */
-.coordinator-grid,
-.people-grid,
-.staff-grid {
-  display: grid;
-  align-items: stretch;
-  gap: 22px;
-}
-
-/* Three coordinators aligned in the same row */
-.coordinator-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* Faculty members displayed in three columns */
-.people-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-/* Two BSCS faculty cards centered together */
-.people-grid--two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  max-width: 790px;
+/* Unverified Faculty Information */
+.notice {
+  max-width: 700px;
   margin: 0 auto;
+  padding: 22px;
+  border: 1px solid #e5b94f;
+  border-radius: 12px;
+  background-color: #fffdf7;
+  color: #567166;
+  text-align: center;
+  line-height: 1.8;
 }
 
-/* Four staff cards on larger screens */
-.staff-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
+/* Footer */
+.footer {
+  padding: 28px 20px;
+  border-top: 3px solid #e5b94f;
+  background-color: #10916f;
+  color: #e2f1e8;
+  text-align: center;
+  font-size: 13px;
 }
 
-.staff-grid .person {
-  padding-right: 16px;
-  padding-left: 16px;
+.footer p {
+  margin: 5px 0;
 }
 
-.staff-grid .image {
-  width: min(100%, 180px);
-  height: 200px;
+.footer p:last-child {
+  color: #e5b94f;
 }
 
-/* 15. PROGRAM SUBHEADINGS */
-.program-group {
-  margin-bottom: 42px;
-}
-
-.program-heading {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin: 0 0 23px;
-  color: var(--gold-light);
-  font-size: 1.2rem;
-  font-weight: 800;
-  line-height: 1.4;
-}
-
-.program-heading::after {
-  height: 1px;
-  flex: 1;
-  content: "";
-  background: rgba(248, 231, 174, 0.45);
-}
-
-/* 16. TABLET RESPONSIVE LAYOUT */
-@media (max-width: 1000px) {
-  .faculty-page {
-    padding: 64px 24px;
-  }
-
-  .coordinator-grid,
-  .people-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .staff-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-/* 17. MOBILE RESPONSIVE LAYOUT */
-@media (max-width: 600px) {
-  .faculty-page {
-    padding: 48px 16px;
-    scroll-margin-top: 90px;
-  }
-
-  .page-header {
-    margin-bottom: 50px;
-  }
-
-  .intro {
-    font-size: 0.94rem;
-  }
-
-  .faculty-section {
-    margin-bottom: 56px;
-  }
-
-  .section-title {
-    margin-bottom: 24px;
-  }
-
-  .section-title h2 {
-    font-size: 1.55rem;
-  }
-
-  .coordinator-grid,
+/* Tablet */
+@media (max-width: 900px) {
   .people-grid,
-  .people-grid--two,
-  .staff-grid {
-    grid-template-columns: minmax(0, 1fr);
-    width: 100%;
-    max-width: 390px;
+  .four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .hero {
+    padding: 45px 0;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .lead {
+    font-size: 14px;
+  }
+
+  .section {
+    margin-bottom: 45px;
+  }
+
+  .section h2 {
+    font-size: 22px;
+  }
+
+  .people-grid,
+  .four,
+  .two {
+    grid-template-columns: 1fr;
+    max-width: 380px;
     margin-right: auto;
     margin-left: auto;
   }
-
-  .person {
-    padding: 22px 18px 24px;
-  }
-
-  .person .image {
-    width: min(100%, 230px);
-    height: 245px;
-  }
-
-  .program-heading {
-    font-size: 1.05rem;
-  }
-}
-
-/* 18. ACCESSIBILITY: REDUCE ANIMATIONS IF REQUESTED */
-@media (prefers-reduced-motion: reduce) {
-  .person {
-    transition: none;
-  }
-
-  .person:hover {
-    transform: none;
-  }
 }
 </style>
-git diff -- src/views/Faculty.vue
