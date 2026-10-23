@@ -13,6 +13,25 @@ const router = createRouter({
     { path: '/faculty', name: 'faculty', component: Faculty },
     { path: '/news', name: 'news', component: NewsView },
     { path: '/contact', name: 'contact', component: ContactView },
+
+    
+{
+  path: '/programs/cs',
+  component: () => import('@/views/CSView.vue')
+},
+{
+  path: '/programs/it',
+  component: () => import('@/views/ITView.vue')
+},
+{
+  path: '/programs/dmia',
+  component: () => import('@/views/DMIAView.vue')
+},
+{
+  path: '/programs/is',
+  component: () => import('@/views/ISView.vue')
+}
+
   ],
 
   scrollBehavior(to) {

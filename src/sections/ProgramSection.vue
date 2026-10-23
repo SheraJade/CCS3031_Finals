@@ -1,3 +1,4 @@
+
 <template>
   <section class="program" id="program">
     <div class="container">
@@ -7,53 +8,57 @@
       </div>
 
       <div class="cards">
-        <div class="card">
+        <!-- Computer Science -->
+        <router-link to="/programs/cs" class="card">
           <div class="image">
-            <img src="@/assets/image/programs/css.png" alt="CSS" />
+            <img src="@/assets/image/programs/css.png" alt="CS" />
           </div>
           <h2>CS</h2>
           <h3>Computer Science</h3>
           <p>
-            Focuses on programming, algorithms, software development, 
+            Focuses on programming, algorithms, software development,
             and the theoretical foundations of computing.
           </p>
-        </div>
+        </router-link>
 
-        <div class="card">
+        <!-- Information Technology -->
+        <router-link to="/programs/it" class="card">
           <div class="image">
-            <img src="@/assets/image/programs/itso.png" alt="ITSO" />
+            <img src="@/assets/image/programs/itso.png" alt="IT" />
           </div>
           <h2>IT</h2>
           <h3>Information Technology</h3>
           <p>
-            Focuses on programming, algorithms, software development, 
+            Focuses on programming, algorithms, software development,
             and the theoretical foundations of computing.
           </p>
-        </div>
+        </router-link>
 
-        <div class="card">
+        <!-- Digital Media and Interactive Arts -->
+        <router-link to="/programs/dmia" class="card">
           <div class="image">
-            <img src="@/assets/image/programs/midas.png" alt="MIDAS" />
+            <img src="@/assets/image/programs/midas.png" alt="DMIA" />
           </div>
           <h2>DMIA</h2>
           <h3>Digital Media and Interactive Arts</h3>
           <p>
-            Combines creativity and technology to create digital content, 
+            Combines creativity and technology to create digital content,
             multimedia designs, animations, and interactive experiences.
           </p>
-        </div>
+        </router-link>
 
-        <div class="card">
+        <!-- Information Systems -->
+        <router-link to="/programs/is" class="card">
           <div class="image">
-            <img src="@/assets/image/programs/lis.png" alt="LIS" />
+            <img src="@/assets/image/programs/lis.png" alt="IS" />
           </div>
           <h2>IS</h2>
           <h3>Information Systems</h3>
           <p>
-            Focuses on organizing, managing, preserving, and providing 
+            Focuses on organizing, managing, preserving, and providing
             access to information and library resources.
           </p>
-        </div>
+        </router-link>
       </div>
     </div>
   </section>
@@ -73,37 +78,59 @@
   width: 100%;
   height: 100%;
   margin: auto;
+}
 
-  .title {
-    text-align: center;
-    margin-bottom: 40px;
+.title {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    p {
-      color: #f5a623;
-      font-weight: bold;
-    }
+.title p {
+  color: #f5a623;
+  font-weight: bold;
+}
 
-    h1 {
-      color: #f7f8f4;
-      font-size: 45px;
-      margin: 10px;
-    }
-  }
+.title h1 {
+  color: #f7f8f4;
+  font-size: 45px;
+  margin: 10px;
+}
 
-  .cards {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 20px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
 
-    .card {
-      background-color: #fbfbfb;
-      padding: 40px 30px;
-      text-align: center;
-      border: 2px groove #7675d4;
-      border-radius: 10px;
-      box-sizing: border-box;
+.card {
+  display: block;
+  background-color: #fbfbfb;
+  padding: 40px 30px;
+  text-align: center;
+  border: 2px groove #7675d4;
+  border-radius: 10px;
+  box-sizing: border-box;
 
-      .image {
+  /* Make the whole card clickable */
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  /* Hover animation */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:focus-visible {
+  outline: 3px solid #f5a623;
+  outline-offset: 4px;
+}
+
+.image {
   width: 100%;
   height: 220px;
   padding: 15px;
@@ -124,35 +151,30 @@
   border-radius: 10px;
 }
 
-      h2 {
-        color: #230134;
-        font-size: 30px;
-        margin: 15px 0 5px;
-      }
+.card h2 {
+  color: #230134;
+  font-size: 30px;
+  margin: 15px 0 5px;
+}
 
-      h3 {
-        margin-bottom: 12px;
-        color: #7675d4;
-        font-size: 17px;
-      }
+.card h3 {
+  margin-bottom: 12px;
+  color: #7675d4;
+  font-size: 17px;
+}
 
-      p {
-        color: #013402;
-        line-height: 1.5;
-      }
-    }
-  }
+.card p {
+  color: #013402;
+  line-height: 1.5;
 }
 
 @media (max-width: 900px) {
-  .container {
-    .cards {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .program {
+    padding: 60px 30px;
+  }
 
-    .card {
-      padding: 30px 20px;
-    }
+  .card {
+    padding: 30px 20px;
   }
 }
 
@@ -163,22 +185,18 @@
     padding: 60px 20px;
   }
 
-  .container {
-    .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .card {
-      padding: 30px 20px;
-    }
+  .card {
+    padding: 30px 20px;
+  }
 
-    .title {
-      h1 {
-        font-size: 35px;
-      }
-    }
+  .title h1 {
+    font-size: 35px;
   }
 }
 
@@ -187,14 +205,12 @@
     padding: 50px 12px;
   }
 
-  .container {
-    .card {
-      padding: 25px 15px;
+  .card {
+    padding: 25px 15px;
+  }
 
-      h2 {
-        font-size: 25px;
-      }
-    }
+  .card h2 {
+    font-size: 25px;
   }
 }
 </style>
