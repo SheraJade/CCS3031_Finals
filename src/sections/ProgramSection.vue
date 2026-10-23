@@ -14,8 +14,8 @@
           <h2>CS</h2>
           <h3>Computer Science</h3>
           <p>
-            Workshops and projects that bridge the gap between the physical and
-            digital worlds.
+            Focuses on programming, algorithms, software development, 
+            and the theoretical foundations of computing.
           </p>
         </div>
 
@@ -26,8 +26,8 @@
           <h2>IT</h2>
           <h3>Information Technology</h3>
           <p>
-            Learn to design, query, and manage the data that powers modern
-            applications.
+            Focuses on programming, algorithms, software development, 
+            and the theoretical foundations of computing.
           </p>
         </div>
 
@@ -38,7 +38,8 @@
           <h2>DMIA</h2>
           <h3>Digital Media and Interactive Arts</h3>
           <p>
-            Learn to build applications and develop practical coding skills.
+            Combines creativity and technology to create digital content, 
+            multimedia designs, animations, and interactive experiences.
           </p>
         </div>
 
@@ -49,8 +50,8 @@
           <h2>IS</h2>
           <h3>Information Systems</h3>
           <p>
-            Explore network infrastructure, connectivity, and communication
-            systems.
+            Focuses on organizing, managing, preserving, and providing 
+            access to information and library resources.
           </p>
         </div>
       </div>
@@ -103,17 +104,25 @@
       box-sizing: border-box;
 
       .image {
-        width: 100%;
-      }
+  width: 100%;
+  height: 220px;
+  padding: 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
 
-      img {
-        display: block;
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        box-shadow: 0 6px 20px rgba(229, 152, 29, 0.434);
-        border-radius: 10px;
-      }
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  box-shadow: 0 6px 20px rgba(229, 152, 29, 0.2);
+  border-radius: 10px;
+}
 
       h2 {
         color: #230134;
